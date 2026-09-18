@@ -1,0 +1,21 @@
+# ========================================================
+# CẤU HÌNH WEB SERVER APACHE (INFINITYFREE / LITESPEED)
+# ========================================================
+
+# Tắt duyệt danh mục thư mục (Directory Browsing)
+Options -Indexes
+
+# Ẩn thông tin phiên bản Server
+ServerSignature Off
+
+# Thiết lập bảng mã UTF-8 mặc định
+AddDefaultCharset UTF-8
+
+# Chặn trực tiếp người dùng tải các file nhạy cảm
+<FilesMatch "^(schema\.sql|.*\.log|.*\.ini|\.env|\.git.*)$">
+    Order allow,deny
+    Deny from all
+</FilesMatch>
+
+# Thiết lập file mặc định khi truy cập
+DirectoryIndex index.php index.html

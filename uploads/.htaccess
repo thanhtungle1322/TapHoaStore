@@ -1,0 +1,7 @@
+# Bảo mật thư mục uploads: Ngăn chặn tuyệt đối việc thực thi mã script
+<FilesMatch "\.(php|php3|php4|php5|phtml|pl|py|cgi|sh|bash)$">
+    Order Deny,Allow
+    Deny from all
+</FilesMatch>
+
+Options -ExecCGI

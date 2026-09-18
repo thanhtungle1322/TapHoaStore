@@ -1,0 +1,12 @@
+# File môi trường chứa mật khẩu nhạy cảm - KHÔNG BAO GIỜ PUSH LÊN GIT
+.env
+
+# Thư mục upload ảnh từ người dùng
+uploads/*
+!uploads/.gitkeep
+!uploads/.htaccess
+
+# File log hoặc tạm
+*.log
+.DS_Store
+Thumbs.db

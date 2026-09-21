@@ -60,6 +60,10 @@ $pageTitle = isset($pageTitle) ? $pageTitle . ' - Tạp Hóa Store' : 'Tạp Hó
                 <span><i class="fa-solid fa-truck-fast text-emerald-300 mr-1.5"></i> Miễn phí vận chuyển cho đơn hàng từ 300.000 ₫</span>
                 <span class="hidden sm:inline-block text-emerald-400">|</span>
                 <span class="hidden sm:inline-block"><i class="fa-solid fa-headset text-emerald-300 mr-1"></i> Hotline: 1900 6868</span>
+                <span class="hidden sm:inline-block text-emerald-400">|</span>
+                <a href="<?= base_url('orders/track.php') ?>" class="hidden sm:inline-flex items-center gap-1.5 text-emerald-200 hover:text-white transition">
+                    <i class="fa-solid fa-magnifying-glass-location text-emerald-300"></i> Tra cứu đơn hàng
+                </a>
             </div>
             <div class="flex items-center gap-3">
                 <?php if ($currentUser): ?>

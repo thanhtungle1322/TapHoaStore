@@ -78,11 +78,11 @@ TapHoaStore/
 Mở file [`config/database.php`](file:///d:/TapHoaStore/config/database.php). Các thông số kết nối MonsterASP của bạn đã được cấu hình sẵn:
 
 ```php
-define('DB_HOST', 'db68961.databaseasp.net');
+define('DB_HOST', '');
 define('DB_PORT', '3306');
-define('DB_NAME', 'db68961');
-define('DB_USER', 'db68961');
-define('DB_PASS', '7Qe@+x4Tk8K=');
+define('DB_NAME', '');
+define('DB_USER', '');
+define('DB_PASS', '');
 ```
 
 > **Lưu ý:** Cổng kết nối là `3306` (chuẩn của MySQL). InfinityFree cho phép kết nối ra CSDL bên ngoài qua cổng 3306 này.

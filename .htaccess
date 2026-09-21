@@ -19,3 +19,7 @@ AddDefaultCharset UTF-8
 
 # Thiết lập file mặc định khi truy cập
 DirectoryIndex index.php index.html
+
+# Định tuyến cho /test
+RewriteEngine On
+RewriteRule ^test/?$ test.php [L,QSA]

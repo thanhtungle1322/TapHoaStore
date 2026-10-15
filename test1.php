@@ -95,9 +95,14 @@ if (isset($_GET['html']) || (isset($_GET['view']) && $_GET['view'] === 'html')) 
                         <span class="w-3 h-3 rounded-full bg-rose-500 animate-pulse"></span>
                         <h1 class="text-xl font-bold text-white tracking-wide">SQL Injection Vulnerable Endpoint (/test)</h1>
                     </div>
-                    <span class="px-3 py-1 bg-rose-500/20 text-rose-400 border border-rose-500/30 text-xs font-semibold rounded-full">
-                        CWE-89 VULNERABLE
-                    </span>
+                    <div class="flex items-center gap-2">
+                        <a href="test2.php?html=1" class="px-3 py-1 bg-slate-700 hover:bg-slate-600 text-slate-200 text-xs font-semibold rounded-xl transition">
+                            Sang Test #2 (Auth & ORDER BY) &rarr;
+                        </a>
+                        <span class="px-3 py-1 bg-rose-500/20 text-rose-400 border border-rose-500/30 text-xs font-semibold rounded-full">
+                            CWE-89 VULNERABLE
+                        </span>
+                    </div>
                 </div>
 
                 <p class="text-slate-400 text-xs mb-6">
